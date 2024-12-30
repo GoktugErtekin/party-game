@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: large;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+}
+
+body {
+    background: -webkit-linear-gradient(to right, #8e0e00, #1f1c18); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card {
+    width: 250px;
+    height: 350px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #302f2e;
+    color: rgb(255, 255, 255);
+}
+@-webkit-keyframes flip-vertical-left {
+   0% {
+     -webkit-transform: rotateY(0);
+             transform: rotateY(0);
+   }
+   100% {
+     -webkit-transform: rotateY(360deg);
+             transform: rotateY(360deg);
+   }
+ }
+ @keyframes flip-vertical-left {
+   0% {
+     -webkit-transform: rotateY(0);
+             transform: rotateY(0);
+   }
+   100% {
+     -webkit-transform: rotateY(360deg);
+             transform: rotateY(360deg);
+   }
+}
+@-webkit-keyframes tracking-in-expand {
+   0% {
+     letter-spacing: -0.5em;
+     opacity: 0;
+   }
+   40% {
+     opacity: 0.6;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+ @keyframes tracking-in-expand {
+   0% {
+     letter-spacing: -0.5em;
+     opacity: 0;
+   }
+   40% {
+     opacity: 0.6;
+   }
+   100% {
+     opacity: 1;
+   }
+}
